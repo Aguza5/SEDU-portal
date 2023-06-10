@@ -106,8 +106,8 @@ function buildTempChart(){
       {
         label: 'Sensación térmica',
         data: STDatas,
-        borderColor: 'rgb(255, 159, 64)',
-        backgroundColor: 'rgb(255, 159, 64)',
+        borderColor: 'rgb(143, 237, 143)',
+        backgroundColor: 'rgb(143, 237, 143)',
         stack: 'combined',
         type: 'line',
         order: 1
@@ -115,8 +115,8 @@ function buildTempChart(){
       {
         label: 'Temperatura',
         data: TempDatas,
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 105, 97)',
+        backgroundColor: 'rgb(255, 105, 97)',
         stack: 'combined',
         type: 'bar',
         order: 0
@@ -124,8 +124,8 @@ function buildTempChart(){
       {
         label: 'Humedad',
         data: HumDatas,
-        borderColor: 'rgb(143, 237, 143)',
-        backgroundColor: 'rgb(143, 237, 143)',
+        borderColor: 'rgb(132, 182, 244)',
+        backgroundColor: 'rgb(132, 182, 244)',
         stack: 'combined',
         type: 'line',
         order: 2
@@ -145,7 +145,7 @@ function buildTempChart(){
         },
         title: {
           display: true,
-          text: 'Temperatura vs Humedad vs Punto de Rocío'
+          text: 'Temperatura vs Humedad vs Sensación Térmica'
         }
       }
     },
