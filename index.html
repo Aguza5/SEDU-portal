@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SEDU - Datos Meteorológicos</title>
+    <link rel="icon" href="resources/solNubeLluvia.png" type="image/png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src='service.js'></script>
+    <script src='lib/chart.min.js'></script>
+    <script src='myCharts.js'></script>
+    <script src='lib/bootstrap.bundle.min.js'></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">José Manuel Aguza Barragán</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#config">Configuración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#graficas">Gráficas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobrePlataforma">Sobre esta plataforma</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+<br>
+<figure class="text-center paddingHeader">
+  <blockquote class="blockquote">
+    <h1 id="inicio">SEDU - Datos meteorológicos</h1>
+  </blockquote>
+</figure>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 id="config">Acciones disponibles</h2>
+    </div>
+
+    <div class="col-md-12 d-flex align-items-center justify-content-center">
+      <button class="btn btn-dark active Actionbuttons" onclick="refreshPage()">Refrescar todos los datos</button>
+      <button class="btn btn-dark active Actionbuttons" id="addDataButtonTemp">Agregar un nuevo dato</button>
+    </div>
+  </div>
+</div><br/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+     <h2 id="graficas">Datos obtenidos por los sensores</h2>
+      <canvas id="chartTempCanvas"></canvas>
+    </div>
+    <div class="col-md-12">
+      <br>
+      <div id="TempRecomendation" class="custom-paragraph"></div>
+    </div>
+</div><br/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 NoPadding">
+      <h2 id="sobrePlataforma">Sobre esta plataforma</h2>
+      <p>Plataforma que realizar llamadas a la API privada que ofrece el nodo creado en ThingSpeak, llamado ‘Nodo Centro Meteorológico – SEDU’ para representar algunos datos de los disponibles y ofrecer algunas recomendaciones. Esta plataforma es simplemente una pequeña muestra del uso que se le pueden dar a los datos almacenados en ThingSpeak, proporcionados por la pasarela configurada (Raspberry Pi 3) obtenidos por los sensores LRD, DHT22 y MPU-6050 conectados al microcontrolador ST-Nucleo-F411RE.</p>
+      <p>Realizado por José Manuel Aguza Barragán, alumno de primer curso del Máster Oficial Ingeniería Informática - Sistemas Empotrados, Distribuidos y Ubícuos.</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

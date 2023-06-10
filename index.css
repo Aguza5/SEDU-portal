@@ -1,0 +1,52 @@
+.paddingHeader {
+  padding-top: 50px !important; 
+}
+
+.Actionbuttons {
+  color: white !important;
+  font-weight: bold!important;
+}
+
+.NoPadding {
+  padding: 0px !important;
+}
+
+button {
+  margin: 5px !important;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.custom-paragraph {
+  background-color: #F2E8D9;  /* Color de fondo */
+  padding: 10px;             /* Espacio interno */
+  color: #333;               /* Color de texto */
+  font-size: 16px;           /* Tamaño de fuente */
+  border-radius: 5px;        /* Esquinas redondeadas */
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  button {
+  font-size: 12px !important;
+}
+h2 {
+  font-size: 16px !important;
+}
+h1 {
+  font-size: 20px !important;
+}
+
+.custom-paragraph {
+  background-color: #F2E8D9;  /* Color de fondo */
+  padding: 10px;             /* Espacio interno */
+  color: #333;               /* Color de texto */
+  font-size: 12px;           /* Tamaño de fuente */
+  border-radius: 5px;        /* Esquinas redondeadas */
+  text-align: center;
+  font-weight: bold;
+}
+}
