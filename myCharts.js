@@ -83,6 +83,8 @@ function buildTempChart(){
   for (let i = 0; i < TSdata.feeds.length; i++) {
     let feed = TSdata.feeds[i];
     TempDatas.push(feed.field5);
+    //variable para el control de nuevos datos
+    lastData = feed.entry_id;
   }
 
   let STDatas = [];
