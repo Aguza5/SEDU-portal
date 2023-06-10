@@ -1,4 +1,3 @@
-
 //config vars
 const api_key = 'AO7D8W1KC6UOQBFT';
 
