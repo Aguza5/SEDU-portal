@@ -53,7 +53,7 @@ function parseFecha(fecha) {
   let dia = date.getUTCDate();
   let mes = date.getUTCMonth() + 1;
   let anio = date.getUTCFullYear();
-  let horas = date.getUTCHours();
+  let horas = date.getUTCHours() + 2; // por estar en GTM +2
   let minutos = date.getUTCMinutes();
   // Se anhaden 0 en caso de ser necesario
   dia = dia < 10 ? "0" + dia : dia;

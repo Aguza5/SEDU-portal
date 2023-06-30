@@ -32,6 +32,7 @@ function updateTempChart(chartTemp){
   if(lastData == entryId){
     alert("Todos los datos disponibles ya han sido agregados")
   }else{
+    console.log(dataField4Hum.feeds[0].created_at)
     chartTemp.data.labels.push(dataField4Hum.feeds[0].created_at);
 
     let humVar = dataField4Hum.feeds[0].field4;
